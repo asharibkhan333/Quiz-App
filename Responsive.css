@@ -1,0 +1,116 @@
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .start-card {
+        padding: 35px 25px;
+    }
+
+    .start-card h1 {
+        font-size: 2rem;
+    }
+
+    .logo-icon {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .features {
+        gap: 10px;
+    }
+
+    .feature {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .quiz-header {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+
+    .timer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .timer-text {
+        font-size: 1rem;
+    }
+
+    .question {
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+    }
+
+    .option {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+
+    .option-letter {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+        margin-right: 12px;
+    }
+
+    .result-card {
+        padding: 35px 25px;
+    }
+
+    .result-icon {
+        font-size: 56px;
+    }
+
+    .result-title {
+        font-size: 1.5rem;
+    }
+
+    .score-number {
+        font-size: 3rem;
+    }
+
+    .result-stats {
+        gap: 30px;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* Focus States */
+.btn:focus,
+.option:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.3);
+}
+
+/* Selection */
+::selection {
+    background: var(--primary-light);
+    color: var(--primary);
+}

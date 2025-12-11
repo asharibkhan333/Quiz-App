@@ -1,0 +1,40 @@
+:root {
+    --primary: #0891b2;
+    --primary-hover: #0e7490;
+    --primary-light: #cffafe;
+    --secondary: #64748b;
+    --background: #f1f5f9;
+    --card: #ffffff;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --success: #22c55e;
+    --success-light: #dcfce7;
+    --error: #ef4444;
+    --error-light: #fee2e2;
+    --border: #e2e8f0;
+    --option-bg: #f1f5f9;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --radius: 16px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme */
+body.dark {
+    --primary: #22d3ee;
+    --primary-hover: #67e8f9;
+    --primary-light: #164e63;
+    --secondary: #94a3b8;
+    --background: #0f172a;
+    --card: #1e293b;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --success: #4ade80;
+    --success-light: #14532d;
+    --error: #f87171;
+    --error-light: #7f1d1d;
+    --border: #334155;
+    --option-bg: #334155;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+}

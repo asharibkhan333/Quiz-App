@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your knowledge with our interactive quiz featuring 10 challenging questions">
+    <title>Quiz Master - Test Your Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="variable.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀️</span>
+        <span class="theme-icon moon">🌙</span>
+    </button>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+        <div class="card start-card">
+            <div class="logo">
+                <span class="logo-icon">🧠</span>
+            </div>
+            <h1>Quiz Master</h1>
+            <p class="subtitle">Test your knowledge with 10 challenging questions</p>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">⏱️</span>
+                    <span>15 seconds per question</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🎯</span>
+                    <span>10 unique questions</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <span>Track your score</span>
+                </div>
+            </div>
+            <button id="start-btn" class="btn btn-primary">
+                Start Quiz
+                <span class="btn-arrow">→</span>
+            </button>
+            <p class="high-score-display" id="high-score-display"></p>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+            <div class="progress-container">
+                <div class="progress-text">
+                    <span>Question <span id="current-question">1</span>/10</span>
+                    <span id="score-display">Score: 0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            <div class="timer-container">
+                <div class="timer" id="timer">
+                    <svg class="timer-svg" viewBox="0 0 100 100">
+                        <circle class="timer-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="timer-progress" id="timer-progress" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <span class="timer-text" id="timer-text">15</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card quiz-card">
+            <h2 class="question" id="question"></h2>
+            <div class="options" id="options"></div>
+        </div>
+
+        <button id="next-btn" class="btn btn-primary btn-next" disabled>
+            Next Question
+            <span class="btn-arrow">→</span>
+        </button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+        <div class="card result-card">
+            <div class="result-icon" id="result-icon">🏆</div>
+            <h2 class="result-title" id="result-title">Quiz Complete!</h2>
+            <div class="result-score">
+                <div class="score-circle">
+                    <span class="score-number" id="final-score">0</span>
+                    <span class="score-total">/10</span>
+                </div>
+            </div>
+            <div class="result-percentage" id="result-percentage">0%</div>
+            <p class="result-message" id="result-message">Great job!</p>
+            <div class="result-stats">
+                <div class="stat">
+                    <span class="stat-value correct" id="correct-count">0</span>
+                    <span class="stat-label">Correct</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value incorrect" id="incorrect-count">0</span>
+                    <span class="stat-label">Incorrect</span>
+                </div>
+            </div>
+            <button id="restart-btn" class="btn btn-primary">
+                Play Again
+                <span class="btn-arrow">↻</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="Array.js"></script>
+    <script src="Dom.js"></script>
+    <script src="Toggle.js"></script>
+</body>
+</html>
